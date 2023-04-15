@@ -1,0 +1,114 @@
+
+.judul{
+    display: flex;
+    color: white;
+    width: 1fr;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(16, 15, 15);
+    text-align: center;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2)
+
+}
+
+#calculator{
+    width: 400px;
+    height:470px;
+    display: grid;
+    margin: auto;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    font-family: Gotham Rounded, sans-serif;
+
+}
+
+.top-part-calc{
+    grid-column: 1/-1;
+    font-size: 20px;
+    display: flex;
+    height: 100px;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+}
+
+.top-part-calc .previous-operand{
+    font-size: 1.5rem;
+}
+
+.top-part-calc .current-operand{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.bottom-part-calc{
+    display: flex;
+    width: 1fr;
+    height: 350px;
+    text-align: center;
+    
+}
+
+.bottom-left{
+    display : grid;
+    width: 300px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+}
+
+.cell{
+    font-size: 40px;
+    cursor: pointer;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    border-color: white;
+    
+}
+
+.cell:hover{
+    font-size: 40px;
+    cursor: pointer;
+    background-color: rgb(93, 92, 92);
+    color: white;
+    
+    
+}
+
+.cell:active{
+    font-size: 42px;
+    cursor: pointer;
+    background-color: rgb(24, 23, 23);
+    color: white;
+}
+
+.bottom-right{
+    display : grid;
+    width: 100px;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.cell-right{
+    font-size: 30px;
+    border-color: white;
+    cursor: pointer;
+    background-color: rgb(107, 107, 107);
+    color: white;
+}
+
+
+.cell-right:hover{
+    font-size: 30px;
+
+    cursor: pointer;
+    background-color: rgb(135, 134, 134);
+    color: white;
+}
+.cell-right:active{
+    font-size: 32px;
+    cursor: pointer;
+    background-color: rgb(80, 79, 79);
+    color: white;
+}
+
